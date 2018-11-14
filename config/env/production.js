@@ -22,7 +22,7 @@ module.exports = {
     cors: {
       allowOrigins: [
         'http://localhost',
-        'https://beevaffinity.herokuapp.com'
+        'https://beatest-app.herokuapp.com'
       ]
     },
 
@@ -41,7 +41,7 @@ module.exports = {
 
     onlyAllowOrigins: [
       'http://localhost',
-      'https://beevaffinity.herokuapp.com'
+      'https://beatest-app.herokuapp.com'
     ],
 
   },
