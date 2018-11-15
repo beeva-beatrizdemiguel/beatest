@@ -1,7 +1,7 @@
 const faker = require('faker');
 const randomId = (items) =>  items[Math.floor(Math.random() * items.length)].id;
 
-module.exports.bootstrap = async function() {
+module.exports.bootstrap = async function (done) {
 
   if (process.env.NODE_ENV === 'production' || sails.config.models.migrate === 'safe') {
     sails.log.warn('Since we are running with migrate: \'safe\' and/or NODE_ENV=production (in the "' + sails.config.environment + '" Sails environment, to be precise), skipping the rest of the bootstrap to avoid data loss...');
